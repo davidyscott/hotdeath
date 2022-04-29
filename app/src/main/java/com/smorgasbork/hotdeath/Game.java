@@ -1834,22 +1834,22 @@ public class Game extends Thread {
     }
 
     if (!m_players[SEAT_SOUTH - 1].getActive()) {
-      return 250;
+      return 150;
     }
 
     int delay = m_go.getPauseLength();
 
     switch (delay) {
       case 0:
-        return 700;
+        return 300;
       case 1:
-        return 1200;
+        return 500;
       case 2:
-        return 1700;
+        return 800;
       case 3:
-        return 2900;
+        return 1200;
       default:
-        return 4000;
+        return 16000;
     }
   }
 
